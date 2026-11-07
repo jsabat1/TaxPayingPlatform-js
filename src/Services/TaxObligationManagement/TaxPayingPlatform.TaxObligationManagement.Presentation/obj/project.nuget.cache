@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "LUBxb99VTcM=",
+  "success": true,
+  "projectFilePath": "/Users/c00bus/Desktop/taxesplatform/TaxPayingPlatform-js/src/Services/TaxObligationManagement/TaxPayingPlatform.TaxObligationManagement.Presentation/TaxPayingPlatform.TaxObligationManagement.Presentation.csproj",
+  "expectedPackageFiles": [
+    "/Users/c00bus/.nuget/packages/microsoft.aspnetcore.openapi/10.0.14/microsoft.aspnetcore.openapi.10.0.14.nupkg.sha512",
+    "/Users/c00bus/.nuget/packages/microsoft.openapi/2.12.2/microsoft.openapi.2.12.2.nupkg.sha512"
+  ],
+  "logs": []
+}

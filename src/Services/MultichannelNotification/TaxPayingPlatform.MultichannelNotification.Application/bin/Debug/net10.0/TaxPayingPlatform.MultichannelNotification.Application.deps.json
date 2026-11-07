@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "TaxPayingPlatform.MultichannelNotification.Application/1.0.0": {
+        "dependencies": {
+          "TaxPayingPlatform.MultichannelNotification.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TaxPayingPlatform.MultichannelNotification.Application.dll": {}
+        }
+      },
+      "TaxPayingPlatform.MultichannelNotification.Domain/1.0.0": {
+        "runtime": {
+          "TaxPayingPlatform.MultichannelNotification.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TaxPayingPlatform.MultichannelNotification.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TaxPayingPlatform.MultichannelNotification.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

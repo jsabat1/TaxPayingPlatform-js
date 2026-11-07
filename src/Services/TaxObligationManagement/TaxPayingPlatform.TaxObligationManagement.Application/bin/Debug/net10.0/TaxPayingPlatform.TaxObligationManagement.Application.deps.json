@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "TaxPayingPlatform.TaxObligationManagement.Application/1.0.0": {
+        "dependencies": {
+          "TaxPayingPlatform.TaxObligationManagement.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TaxPayingPlatform.TaxObligationManagement.Application.dll": {}
+        }
+      },
+      "TaxPayingPlatform.TaxObligationManagement.Domain/1.0.0": {
+        "runtime": {
+          "TaxPayingPlatform.TaxObligationManagement.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TaxPayingPlatform.TaxObligationManagement.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TaxPayingPlatform.TaxObligationManagement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

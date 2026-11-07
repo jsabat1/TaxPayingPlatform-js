@@ -1,0 +1,6 @@
+@TaxPayingPlatform.ClientPaymentAndQrCode.Presentation_HostAddress = http://localhost:5153
+
+GET {{TaxPayingPlatform.ClientPaymentAndQrCode.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

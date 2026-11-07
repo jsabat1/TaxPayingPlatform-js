@@ -1,0 +1,6 @@
+@TaxPayingPlatform.TaxObligationManagement.Presentation_HostAddress = http://localhost:5257
+
+GET {{TaxPayingPlatform.TaxObligationManagement.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

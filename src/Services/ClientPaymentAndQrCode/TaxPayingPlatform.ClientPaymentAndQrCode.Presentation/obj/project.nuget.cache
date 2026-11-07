@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "39C8mUnbEKc=",
+  "success": true,
+  "projectFilePath": "/Users/c00bus/Desktop/taxesplatform/TaxPayingPlatform-js/src/Services/ClientPaymentAndQrCode/TaxPayingPlatform.ClientPaymentAndQrCode.Presentation/TaxPayingPlatform.ClientPaymentAndQrCode.Presentation.csproj",
+  "expectedPackageFiles": [
+    "/Users/c00bus/.nuget/packages/microsoft.aspnetcore.openapi/10.0.14/microsoft.aspnetcore.openapi.10.0.14.nupkg.sha512",
+    "/Users/c00bus/.nuget/packages/microsoft.openapi/2.12.2/microsoft.openapi.2.12.2.nupkg.sha512"
+  ],
+  "logs": []
+}

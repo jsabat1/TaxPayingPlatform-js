@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "TaxPayingPlatform.ClientPaymentAndQrCode.Application/1.0.0": {
+        "dependencies": {
+          "TaxPayingPlatform.ClientPaymentAndQrCode.Domain": "1.0.0"
+        },
+        "runtime": {
+          "TaxPayingPlatform.ClientPaymentAndQrCode.Application.dll": {}
+        }
+      },
+      "TaxPayingPlatform.ClientPaymentAndQrCode.Domain/1.0.0": {
+        "runtime": {
+          "TaxPayingPlatform.ClientPaymentAndQrCode.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TaxPayingPlatform.ClientPaymentAndQrCode.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TaxPayingPlatform.ClientPaymentAndQrCode.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

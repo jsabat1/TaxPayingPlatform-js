@@ -1,0 +1,23 @@
+<Solution>
+  <Folder Name="/Services/" />
+  <Folder Name="/Services/ClientPaymentAndQrCode/">
+    <Project Path="src/Services/ClientPaymentAndQrCode/TaxPayingPlatform.ClientPaymentAndQrCode.Application/TaxPayingPlatform.ClientPaymentAndQrCode.Application.csproj" />
+    <Project Path="src/Services/ClientPaymentAndQrCode/TaxPayingPlatform.ClientPaymentAndQrCode.Domain/TaxPayingPlatform.ClientPaymentAndQrCode.Domain.csproj" />
+    <Project Path="src/Services/ClientPaymentAndQrCode/TaxPayingPlatform.ClientPaymentAndQrCode.Presentation/TaxPayingPlatform.ClientPaymentAndQrCode.Presentation.csproj" />
+  </Folder>
+  <Folder Name="/Services/MultichannelNotification/">
+    <Project Path="src/Services/MultichannelNotification/TaxPayingPlatform.MultichannelNotification.Application/TaxPayingPlatform.MultichannelNotification.Application.csproj" />
+    <Project Path="src/Services/MultichannelNotification/TaxPayingPlatform.MultichannelNotification.Domain/TaxPayingPlatform.MultichannelNotification.Domain.csproj" />
+    <Project Path="src/Services/MultichannelNotification/TaxPayingPlatform.MultichannelNotification.Presentation/TaxPayingPlatform.MultichannelNotification.Presentation.csproj" />
+  </Folder>
+  <Folder Name="/Services/TaxObligationManagement/">
+    <Project Path="src/Services/TaxObligationManagement/TaxPayingPlatform.TaxObligationManagement.Application/TaxPayingPlatform.TaxObligationManagement.Application.csproj" />
+    <Project Path="src/Services/TaxObligationManagement/TaxPayingPlatform.TaxObligationManagement.Domain/TaxPayingPlatform.TaxObligationManagement.Domain.csproj" />
+    <Project Path="src/Services/TaxObligationManagement/TaxPayingPlatform.TaxObligationManagement.Presentation/TaxPayingPlatform.TaxObligationManagement.Presentation.csproj" />
+  </Folder>
+  <Folder Name="/Tests/" />
+  <Folder Name="/Tests/ClientPaymentAndQrCode/">
+    <Project Path="tests/ClientPaymentAndQrCode/TaxPayingPlatform.ClientPaymentAndQrCode.Application.Tests/TaxPayingPlatform.ClientPaymentAndQrCode.Application.Tests.csproj" />
+    <Project Path="tests/ClientPaymentAndQrCode/TaxPayingPlatform.ClientPaymentAndQrCode.Domain.Tests/TaxPayingPlatform.ClientPaymentAndQrCode.Domain.Tests.csproj" />
+  </Folder>
+</Solution>
