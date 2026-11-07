@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaxPayingPlatform.ClientPaymentAndQrCode.Application.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c647b2add31e0e12442847a75555e7450259354")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a0e45a3ad51ed817d88662131d6cb4653a16295")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaxPayingPlatform.ClientPaymentAndQrCode.Application.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaxPayingPlatform.ClientPaymentAndQrCode.Application.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

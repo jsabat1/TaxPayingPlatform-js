@@ -1,23 +1,19 @@
+using TaxPayingPlatform.ClientPaymentAndQrCode.Application.Repositories;
+using TaxPayingPlatform.ClientPaymentAndQrCode.Application.Services;
+using TaxPayingPlatform.ClientPaymentAndQrCode.Presentation.Infrastructure;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+//Register Web API controllers
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+
+//Register service dependencies
+builder.Services.AddSingleton<ITaxPaymentInstructionRepository, InMemoryTaxPaymentInstructionRepository>();
+builder.Services.AddScoped<ITaxPaymentInstructionService, TaxPaymentInstructionService>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.MapOpenApi();
-}
-
 app.UseHttpsRedirection();
-
-app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
