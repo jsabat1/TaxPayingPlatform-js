@@ -11,7 +11,7 @@ public class TaxPaymentInstructionServiceTests
 {
     private const string ValidMicroAccount = "12345678901234567890123456";
     private static readonly DateTimeOffset FutureDeadline = new(2026, 11, 20, 23, 59, 59, TimeSpan.Zero);
-
+//mock repository, trackuje ile razy uzyto metod
     private readonly Mock<ITaxPaymentInstructionRepository> _repositoryMock = new();
     private readonly TaxPaymentInstructionService _sut;
 
@@ -147,7 +147,7 @@ public class TaxPaymentInstructionServiceTests
                 existing.Id,
                 "RECEIPT-LATE-999",
                 FutureDeadline.AddHours(5)));
-
+//sprawdzenie czy wywolalo metode
         _repositoryMock.Verify(
             r => r.SaveAsync(It.IsAny<TaxPaymentInstruction>(), It.IsAny<CancellationToken>()),
             Times.Never);

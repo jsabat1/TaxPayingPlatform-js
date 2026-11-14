@@ -1,5 +1,5 @@
 namespace TaxPayingPlatform.ClientPaymentAndQrCode.Application.DTOs;
-
+//sending directly to the user not domain
 public sealed record EncodedBankingQrCodeDto(
     string MicroAccountNumber,
     decimal Amount,

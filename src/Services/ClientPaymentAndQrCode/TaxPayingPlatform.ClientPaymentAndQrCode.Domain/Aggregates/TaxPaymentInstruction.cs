@@ -3,11 +3,11 @@ using TaxPayingPlatform.ClientPaymentAndQrCode.Domain.Exceptions;
 using TaxPayingPlatform.ClientPaymentAndQrCode.Domain.ValueObjects;
 
 namespace TaxPayingPlatform.ClientPaymentAndQrCode.Domain.Aggregates;
-
+//aggregate root:
 public sealed class TaxPaymentInstruction
 {
     public const int MinimumReceiptReferenceLength = 5;
-
+//
     private readonly List<BankTransferAttempt> _transferAttempts = new();
 
     public Guid Id { get; }
@@ -22,7 +22,7 @@ public sealed class TaxPaymentInstruction
     public bool IsQrCodeDisplayed { get; private set; }
     public string? PaymentReceiptReference { get; private set; }
     public DateTimeOffset? ConfirmedAt { get; private set; }
-
+//read only
     public IReadOnlyCollection<BankTransferAttempt> TransferAttempts => _transferAttempts.AsReadOnly();
 
     public TaxPaymentInstruction(
@@ -33,6 +33,7 @@ public sealed class TaxPaymentInstruction
         string taxAuthorityCode,
         DateTimeOffset paymentDeadline)
     {
+        //validate inputs on creation
         if (clientId == Guid.Empty)
             throw new ArgumentException("ClientId cannot be empty.", nameof(clientId));
 
@@ -48,14 +49,14 @@ public sealed class TaxPaymentInstruction
         PaymentDeadline = paymentDeadline;
         Status = TaxPaymentStatus.Pending;
     }
-
+//exception nie generuje jak juz zaplacony
     public void GenerateBankingPaymentQrCode()
     {
         if (Status == TaxPaymentStatus.Paid)
         {
             throw new PaymentVerificationFailedException(Id, PaymentReceiptReference, "Cannot regenerate QR code for an already paid tax obligation.");
         }
-
+//value object, validation in contructor
         EncodedQrCode = new EncodedBankingQrCode(
             MicroAccountNumber,
             ObligationAmount,

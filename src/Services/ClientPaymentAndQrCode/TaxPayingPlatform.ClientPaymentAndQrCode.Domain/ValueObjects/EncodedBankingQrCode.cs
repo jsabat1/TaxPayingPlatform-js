@@ -1,7 +1,7 @@
 using TaxPayingPlatform.ClientPaymentAndQrCode.Domain.Exceptions;
 
 namespace TaxPayingPlatform.ClientPaymentAndQrCode.Domain.ValueObjects;
-
+//record, zeby nie dalo sie zmienic po stworzeniu, value object, tylko wartosc
 public sealed record EncodedBankingQrCode
 {
     public const int RequiredMicroAccountLength = 26;

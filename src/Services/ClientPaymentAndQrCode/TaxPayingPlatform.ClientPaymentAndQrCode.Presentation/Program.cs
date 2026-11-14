@@ -4,7 +4,7 @@ using TaxPayingPlatform.ClientPaymentAndQrCode.Presentation.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//Register Web API controllers
+//controllers for routing
 builder.Services.AddControllers();
 
 //Register service dependencies

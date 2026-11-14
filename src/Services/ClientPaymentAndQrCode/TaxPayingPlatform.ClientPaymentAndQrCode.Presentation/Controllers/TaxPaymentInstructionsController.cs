@@ -5,7 +5,7 @@ using TaxPayingPlatform.ClientPaymentAndQrCode.Domain.Exceptions;
 using TaxPayingPlatform.ClientPaymentAndQrCode.Presentation.Contracts;
 
 namespace TaxPayingPlatform.ClientPaymentAndQrCode.Presentation.Controllers;
-
+//automatyczne validation
 [ApiController]
 [Route("api/tax-payment-instructions")]
 public sealed class TaxPaymentInstructionsController : ControllerBase
@@ -32,14 +32,14 @@ public sealed class TaxPaymentInstructionsController : ControllerBase
                 request.TaxAuthorityCode,
                 request.PaymentDeadline,
                 cancellationToken);
-
+//201
             return CreatedAtAction(
                 nameof(GetInstruction),
                 new { instructionId = created.InstructionId },
                 created);
         }
         catch (ArgumentException ex)
-        {
+        {//400
             return BadRequest(new { code = "validation.invalid_argument", message = ex.Message });
         }
     }
